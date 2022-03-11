@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  *main - Entry point
- * more headers goes there 
+ * Return: 0 
  */
  /* betty style doc for function main goes there */
 int main(void)
@@ -18,5 +18,6 @@ int main(void)
 		printf("%d is negative\n", n);
 	else
 		printf("%d is zero\n", n);
+
 	return (0);
 }
