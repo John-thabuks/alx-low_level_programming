@@ -1,5 +1,5 @@
 #include <stdio.h>
-/*
+/**
  *main - Entry point
  *
  *Return: should be a 0
