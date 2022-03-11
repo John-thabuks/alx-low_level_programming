@@ -7,10 +7,11 @@ int main(void)
 {
 	char x;
 
-	for (x = '0'; x <= '10'; x++)
+	for (x = '0'; x < '10'; x++)
 	{
-		putcher(x);
+		printf("%d", x);
 	}
+	printf("\n");
 
 	return (0);
 }
