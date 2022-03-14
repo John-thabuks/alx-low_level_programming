@@ -1,1 +1,1 @@
-ALX LOW LEVEL PROGRAMMING readme
+Created readme for 0X00-Hello_world
