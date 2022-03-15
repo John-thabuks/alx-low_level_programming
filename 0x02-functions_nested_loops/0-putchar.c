@@ -4,7 +4,7 @@
  *
  * Return: 0
  **/
-int main(void)
+int task0(void)
 {
 	char thabuks[] = "_putchar";
 
