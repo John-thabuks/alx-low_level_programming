@@ -1,13 +1,20 @@
-#include <stdio.h>
-#include <main.h>
+#include "main.h"
 /**
- *main - write a program that prints _putchar followed by new line
- *
- *Return: 0
+ * main - write a program that prints _putcher
+ * 
+ * Return: 0
  **/
 int main(void)
 {
-        _putchar("_putchar");
+	char task0[] = "_putchar";
 
-        return 0;
+	int x;
+
+	for (x = 0; x < 8; x++)
+	{
+		_putchar(task0[x]);
+	}
+	_putchar('\n');
+
+	return (0);
 }
