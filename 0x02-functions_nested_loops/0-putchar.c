@@ -1,20 +1,19 @@
 #include "main.h"
 /**
- * main - write a program that prints _putcher
+ * main - write aprogram that prints _putchar 
  * 
  * Return: 0
  **/
 int main(void)
 {
-	char task0[] = "_putchar";
+        char thabuks[] = "_putchar";
 
-	int x;
+        int x;
 
-	for (x = 0; x < 8; x++)
-	{
-		_putchar(task0[x]);
-	}
-	_putchar('\n');
-
-	return (0);
+        for (x = 0; x < 8; x++)
+        {
+                _putchar(thabuks[c]);
+        }
+        _putchar('\n');
+        return (0);
 }
