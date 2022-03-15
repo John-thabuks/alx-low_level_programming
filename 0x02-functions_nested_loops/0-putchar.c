@@ -12,7 +12,7 @@ int main(void)
 
         for (x = 0; x < 8; x++)
         {
-                _putchar(thabuks[c]);
+                _putchar(thabuks[x]);
         }
         _putchar('\n');
         return (0);
