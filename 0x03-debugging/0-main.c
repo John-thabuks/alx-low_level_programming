@@ -1,4 +1,4 @@
-#.include "main.h"
+#include "main.h"
 /**
  *main - Task 0: multiple mains
  *
