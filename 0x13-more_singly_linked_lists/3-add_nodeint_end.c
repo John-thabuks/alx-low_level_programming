@@ -1,38 +1,32 @@
 #include "lists.h"
-#include <stdio.h>
+
 /**
- * find_listint_loop - find the loop in a linked list
- * @head: head of linked list
- * Description: Not allowed to use malloc, free or arrays.
- * Can only declare a max of 2 variables.
- * Return: Address of node where loop starts, or NULL if no loop found.
+ **add_nodeint_end - adds a node at the beginning
+ *@head: head
+ *@n: int
+ *Return: null or address of new element
  */
-listint_t *find_listint_loop(listint_t *head)
+
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-	listint_t *currents, *currentf;
+	listint_t *new;
+	listint_t *tmp = *head;
 
-	if (head == NULL)
+	new = malloc(sizeof(listint_t));
+
+	if (!new)
 		return (NULL);
+	new->n = n;
 
-	currents = currentf = head;
-	do {
-		if (currents->next)
-			currents = currents->next;
-		else
-			return (NULL);
-
-		if (currentf->next->next)
-			currentf = currentf->next->next;
-		else
-			return (NULL);
-	} while (currentf != currents);
-
-	currents = head;
-	while (currentf != currents)
+	if (tmp == NULL)
+		*head = new;
+	else
 	{
-		currentf = currentf->next;
-		currents = currents->next;
+		while (tmp->next != NULL)
+		{
+			tmp = tmp->next;
+		}
+		tmp->next = new;
 	}
-
-	return (currents);
+	return (new);
 }
